@@ -1,0 +1,55 @@
+name,type,description,valid_inputs
+max_consecutive_positives,aggregation,Determines the maximum number of consecutive positive values in the input,"['Double', 'Integer']"
+count_inside_nth_std,aggregation,Determines the count of observations that lie inside the first N standard deviations (inclusive).,['numeric']
+any,aggregation,Determines if any value is 'True' in a list.,"['Boolean', 'BooleanNullable']"
+time_since_last_min,aggregation,Calculates the time since the minimum value occurred.,"['numeric', 'Datetime', 'time_index']"
+num_consecutive_less_mean,aggregation,Determines the length of the longest subsequence below the mean.,['numeric']
+mode,aggregation,Determines the most commonly repeated value.,['category']
+count_less_than,aggregation,Determines the number of values less than a controllable threshold.,['numeric']
+count_below_mean,aggregation,Determines the number of values that are below the mean.,['numeric']
+first,aggregation,Determines the first value in a list.,[]
+num_true,aggregation,Counts the number of `True` values.,"['Boolean', 'BooleanNullable']"
+num_false_since_last_true,aggregation,"Calculates the number of 'False' values since the last `True` value. Description: From a series of Booleans, find the last record with a `True` value. Return the count of 'False' values between that record and the end of the series. Return nan if no values are `True`. Any nan values in the input are ignored. A 'True' value in the last row will result in a count of 0. Inputs are converted too booleans before calculating the result. Examples: >>> num_false_since_last_true = NumFalseSinceLastTrue() >>> num_false_since_last_true([True, False, True, False, False]) 2",['Boolean']
+time_since_first,aggregation,Calculates the time elapsed since the first datetime (in seconds).,"['Datetime', 'time_index']"
+num_peaks,aggregation,"Determines the number of peaks in a list of numbers. Description: Given a list of numbers, count the number of local maxima. Uses the find_peaks function from scipy.signal. Examples: >>> num_peaks = NumPeaks() >>> num_peaks([-5, 0, 10, 0, 10, -5, -4, -5, 10, 0]) 4",['numeric']
+count_above_mean,aggregation,Calculates the number of values that are above the mean.,['numeric']
+min_count,aggregation,Calculates the number of occurrences of the min value in a list,['numeric']
+std,aggregation,"Computes the dispersion relative to the mean value, ignoring `NaN`.",['numeric']
+count_outside_range,aggregation,Determines the number of values that fall outside a certain range.,['numeric']
+last,aggregation,Determines the last value in a list.,[]
+variance,aggregation,Calculates the variance of a list of numbers.,['numeric']
+min,aggregation,"Calculates the smallest value, ignoring `NaN` values.",['numeric']
+entropy,aggregation,Calculates the entropy for a categorical column,['category']
+first_last_time_delta,aggregation,Determines the time between the first and last time value in seconds.,"['Datetime', 'time_index']"
+all,aggregation,Calculates if all values are 'True' in a list.,"['Boolean', 'BooleanNullable']"
+time_since_last_false,aggregation,Calculates the time since the last `False` value.,"['Boolean', 'BooleanNullable', 'Datetime', 'time_index']"
+num_consecutive_greater_mean,aggregation,Determines the length of the longest subsequence above the mean.,['numeric']
+max,aggregation,"Calculates the highest value, ignoring `NaN` values.",['numeric']
+max_consecutive_negatives,aggregation,Determines the maximum number of consecutive negative values in the input,"['Double', 'Integer']"
+count_inside_range,aggregation,Determines the number of values that fall within a certain range.,['numeric']
+percent_true,aggregation,Determines the percent of `True` values.,"['Boolean', 'BooleanNullable']"
+max_consecutive_zeros,aggregation,Determines the maximum number of consecutive zero values in the input,"['Double', 'Integer']"
+median,aggregation,Determines the middlemost number in a list of values.,['numeric']
+auto_correlation,aggregation,Determines the Pearson correlation between a series and a shifted version of the series.,['numeric']
+trend,aggregation,Calculates the trend of a column over time.,"['numeric', 'Datetime', 'time_index']"
+time_since_last_true,aggregation,Calculates the time since the last `True` value.,"['Boolean', 'BooleanNullable', 'Datetime', 'time_index']"
+num_true_since_last_false,aggregation,"Calculates the number of 'True' values since the last `False` value. Description: From a series of Booleans, find the last record with a `False` value. Return the count of 'True' values between that record and the end of the series. Return nan if no values are `False`. Any nan values in the input are ignored. A 'False' value in the last row will result in a count of 0. Examples: >>> num_true_since_last_false = NumTrueSinceLastFalse() >>> num_true_since_last_false([False, True, False, True, True]) 2",['Boolean']
+count,aggregation,"Determines the total number of values, excluding `NaN`.",['index']
+n_most_common,aggregation,Determines the `n` most common elements.,['category']
+time_since_last_max,aggregation,Calculates the time since the maximum value occurred.,"['numeric', 'Datetime', 'time_index']"
+time_since_last,aggregation,Calculates the time elapsed since the last datetime (default in seconds).,"['Datetime', 'time_index']"
+num_zero_crossings,aggregation,"Determines the number of times a list crosses 0. Description: Given a list of numbers, return the number of times the value crosses 0. It is the number of times the value goes from a positive number to a negative number, or a negative number to a positive number. NaN values are ignored. Examples: >>> num_zero_crossings = NumZeroCrossings() >>> num_zero_crossings([1, -1, 2, -2, 3, -3]) 5",['numeric']
+max_consecutive_false,aggregation,Determines the maximum number of consecutive False values in the input,['Boolean']
+average_count_per_unique,aggregation,Determines the average count across all unique value.,['category']
+sum,aggregation,"Calculates the total addition, ignoring `NaN`.",['numeric']
+count_outside_nth_std,aggregation,Determines the number of observations that lie outside the first N standard deviations.,['numeric']
+correlation,aggregation,Computes the correlation between two columns of values.,['numeric']
+num_unique,aggregation,"Determines the number of distinct values, ignoring `NaN` values.",['category']
+skew,aggregation,Computes the extent to which a distribution differs from a normal distribution.,['numeric']
+mean,aggregation,Computes the average for a list of values.,['numeric']
+kurtosis,aggregation,Calculates the kurtosis for a list of numbers,['numeric']
+percent_unique,aggregation,Determines the percent of unique values.,['category']
+max_consecutive_true,aggregation,Determines the maximum number of consecutive True values in the input,['Boolean']
+count_greater_than,aggregation,Determines the number of values greater than a controllable threshold.,['numeric']
+date_first_event,aggregation,Determines the first datetime from a list of datetimes.,"['Datetime', 'time_index']"
+avg_time_between,aggregation,Computes the average number of seconds between consecutive events.,"['Datetime', 'time_index']"

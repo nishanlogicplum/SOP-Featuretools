@@ -1,0 +1,137 @@
+name,type,description,valid_inputs
+quarter,transform,"Determines the quarter a datetime column falls into (1, 2, 3, 4)",['Datetime']
+percent_change,transform,Determines the percent difference between values in a list.,['numeric']
+distance_to_holiday,transform,Computes the number of days before or after a given holiday.,['Datetime']
+and,transform,Performs element-wise logical AND of two lists.,"['Boolean', 'BooleanNullable']"
+less_than,transform,Determines if values in one list are less than another list.,"['Datetime', 'numeric', 'Ordinal: None']"
+rolling_max,transform,Determines the maximum of entries over a given window.,"['numeric', 'Datetime', 'time_index']"
+total_word_length,transform,Determines the total word length.,['NaturalLanguage']
+same_as_previous,transform,Determines if a value is equal to the previous value in a list.,['numeric']
+equal_scalar,transform,Determines if values in a list are equal to a given scalar.,[]
+expanding_trend,transform,Computes the expanding trend for events over a given window.,"['numeric', 'Datetime', 'time_index']"
+url_to_protocol,transform,Determines the protocol (http or https) of a url.,['URL']
+second,transform,Determines the seconds value of a datetime.,['Datetime']
+negate,transform,Negates a numeric value.,['numeric']
+not_equal,transform,Determines if values in one list are not equal to another list.,[]
+greater_than_equal_to,transform,Determines if values in one list are greater than or equal to another list.,"['Datetime', 'numeric', 'Ordinal: None']"
+is_null,transform,Determines if a value is null.,[]
+year,transform,Determines the year value of a datetime.,['Datetime']
+num_characters,transform,"Calculates the number of characters in a given string, including whitespace and punctuation.",['NaturalLanguage']
+hour,transform,Determines the hour value of a datetime.,['Datetime']
+absolute_diff,transform,Calculates the absolute difference from the previous element in a list of numbers.,['numeric']
+cum_max,transform,Calculates the cumulative maximum.,['numeric']
+multiply_numeric,transform,Performs element-wise multiplication of two lists.,['numeric']
+rolling_mean,transform,Calculates the mean of entries over a given window.,"['numeric', 'Datetime', 'time_index']"
+punctuation_count,transform,Determines number of punctuation characters in a string.,['NaturalLanguage']
+diff_datetime,transform,Computes the timedelta between a datetime in a list and the previous datetime in that list.,['Datetime']
+url_to_domain,transform,Determines the domain of a url.,['URL']
+is_year_start,transform,Determines if a date falls on the start of a year.,['Datetime']
+percentile,transform,Determines the percentile rank for each value in a list.,['numeric']
+not_equal_scalar,transform,Determines if values in a list are not equal to a given scalar.,[]
+less_than_scalar,transform,Determines if values are less than a given scalar.,['numeric']
+count_string,transform,Determines how many times a given string shows up in a text field.,['NaturalLanguage']
+is_weekend,transform,Determines if a date falls on a weekend.,['Datetime']
+number_of_unique_words,transform,Determines the number of unique words in a string.,['NaturalLanguage']
+is_leap_year,transform,Determines the is_leap_year attribute of a datetime column.,['Datetime']
+divide_numeric,transform,Performs element-wise division of two lists.,['numeric']
+age,transform,Calculates the age in years as a floating point number given a date of birth.,"['Datetime', 'date_of_birth']"
+modulo_numeric_scalar,transform,Computes the modulo of each element in the list by a given scalar.,['numeric']
+rolling_outlier_count,transform,Determines how many values are outliers over a given window.,"['numeric', 'Datetime', 'time_index']"
+haversine,transform,Calculates the approximate haversine distance between two LatLong columns.,['LatLong']
+time_since_previous,transform,Computes the time since the previous entry in a list.,"['Datetime', 'time_index']"
+rolling_count,transform,Determines a rolling count of events over a given window.,"['Datetime', 'time_index']"
+lag,transform,Shifts an array of values by a specified number of periods.,"['numeric', 'BooleanNullable', 'Boolean', 'time_index', 'category']"
+rate_of_change,transform,Computes the rate of change of a value per second.,"['numeric', 'Datetime', 'time_index']"
+subtract_numeric,transform,Performs element-wise subtraction of two lists.,['numeric']
+cum_sum,transform,Calculates the cumulative sum.,['numeric']
+upper_case_word_count,transform,Determines the number of words in a string that are entirely capitalized.,['NaturalLanguage']
+week,transform,Determines the week of the year from a datetime.,['Datetime']
+num_unique_separators,transform,Calculates the number of unique separators.,['NaturalLanguage']
+is_federal_holiday,transform,Determines if a given datetime is a federal holiday.,['Datetime']
+cum_min,transform,Calculates the cumulative minimum.,['numeric']
+rolling_std,transform,Calculates the standard deviation of entries over a given window.,"['numeric', 'Datetime', 'time_index']"
+number_of_mentions,transform,Determines the number of mentions in a string.,['NaturalLanguage']
+is_year_end,transform,Determines if a date falls on the end of a year.,['Datetime']
+date_to_holiday,transform,"Transforms time of an instance into the holiday name, if there is one.",['Datetime']
+url_to_tld,transform,Determines the top level domain of a url.,['URL']
+geomidpoint,transform,Determines the geographic center of two coordinates.,['LatLong']
+exponential_weighted_std,transform,Computes the exponentially weighted moving standard deviation for a series of numbers,['numeric']
+sine,transform,Computes the sine of a number.,['numeric']
+or,transform,Performs element-wise logical OR of two lists.,"['Boolean', 'BooleanNullable']"
+less_than_equal_to_scalar,transform,Determines if values are less than or equal to a given scalar.,['numeric']
+median_word_length,transform,Determines the median word length.,['NaturalLanguage']
+part_of_day,transform,Determines the part of day of a datetime.,['Datetime']
+num_words,transform,Determines the number of words in a string. Words are sequences of characters delimited by whitespace.,['NaturalLanguage']
+is_lunch_time,transform,"Determines if a datetime falls during configurable lunch hour, on a 24-hour clock.",['Datetime']
+add_numeric_scalar,transform,Adds a scalar to each value in the list.,['numeric']
+greater_than,transform,Determines if values in one list are greater than another list.,"['Datetime', 'numeric', 'Ordinal: None']"
+expanding_count,transform,Computes the expanding count of events over a given window.,"['Datetime', 'time_index']"
+full_name_to_title,transform,Determines the title from a person's name.,['PersonFullName']
+time_since,transform,Calculates time from a value to a specified cutoff datetime.,['Datetime']
+latitude,transform,Returns the first tuple value in a list of LatLong tuples. For use with the LatLong logical type.,['LatLong']
+is_working_hours,transform,Determines if a datetime falls during working hours on a 24-hour clock. Can configure start_hour and end_hour.,['Datetime']
+natural_logarithm,transform,Computes the natural logarithm of a number.,['numeric']
+greater_than_equal_to_scalar,transform,Determines if values are greater than or equal to a given scalar.,['numeric']
+modulo_numeric,transform,Performs element-wise modulo of two lists.,['numeric']
+number_of_hashtags,transform,Determines the number of hashtags in a string.,['NaturalLanguage']
+month,transform,Determines the month value of a datetime.,['Datetime']
+is_month_end,transform,Determines the is_month_end attribute of a datetime column.,['Datetime']
+divide_numeric_scalar,transform,Divides each element in the list by a scalar.,['numeric']
+multiply_boolean,transform,Performs element-wise multiplication of two lists of boolean values.,"['Boolean', 'BooleanNullable']"
+one_digit_postal_code,transform,Returns the one digit prefix of a given postal code.,['PostalCode']
+number_of_words_in_quotes,transform,Determines the number of words in quotes in a string.,['NaturalLanguage']
+minute,transform,Determines the minutes value of a datetime.,['Datetime']
+date_to_time_zone,transform,Determines the timezone of a datetime.,['Datetime']
+expanding_min,transform,Computes the expanding minimum of events over a given window.,"['numeric', 'Datetime', 'time_index']"
+rolling_min,transform,Determines the minimum of entries over a given window.,"['numeric', 'Datetime', 'time_index']"
+exponential_weighted_average,transform,Computes the exponentially weighted moving average for a series of numbers,['numeric']
+square_root,transform,Computes the square root of a number.,['numeric']
+multiply_numeric_boolean,transform,Performs element-wise multiplication of a numeric list with a boolean list.,"['numeric', 'BooleanNullable', 'Boolean']"
+cumulative_time_since_last_false,transform,Determines the time since last `False` value.,"['Boolean', 'Datetime', 'time_index']"
+longitude,transform,Returns the second tuple value in a list of LatLong tuples. For use with the LatLong logical type.,['LatLong']
+email_address_to_domain,transform,Determines the domain of an email,['EmailAddress']
+upper_case_count,transform,Calculates the number of upper case letters in text.,['NaturalLanguage']
+is_month_start,transform,Determines the is_month_start attribute of a datetime column.,['Datetime']
+divide_by_feature,transform,Divides a scalar by each value in the list.,['numeric']
+expanding_max,transform,Computes the expanding maximum of events over a given window.,"['numeric', 'Datetime', 'time_index']"
+title_word_count,transform,Determines the number of title words in a string.,['NaturalLanguage']
+weekday,transform,Determines the day of the week from a datetime.,['Datetime']
+day_of_year,transform,Determines the ordinal day of the year from the given datetime,['Datetime']
+greater_than_scalar,transform,Determines if values are greater than a given scalar.,['numeric']
+numeric_lag,transform,Shifts an array of values by a specified number of periods.,"['numeric', 'time_index']"
+isin,transform,Determines whether a value is present in a provided list.,[]
+exponential_weighted_variance,transform,Computes the exponentially weighted moving variance for a series of numbers,['numeric']
+is_in_geobox,transform,Determines if coordinates are inside a box defined by two corner coordinate points.,['LatLong']
+cosine,transform,Computes the cosine of a number.,['numeric']
+add_numeric,transform,Performs element-wise addition of two lists.,['numeric']
+cum_mean,transform,Calculates the cumulative mean.,['numeric']
+cum_count,transform,Calculates the cumulative count.,"['foreign_key', 'category']"
+two_digit_postal_code,transform,Returns the two digit prefix of a given postal code.,['PostalCode']
+file_extension,transform,Determines the extension of a filepath.,['Filepath']
+not,transform,Negates a boolean value.,"['Boolean', 'BooleanNullable']"
+is_quarter_end,transform,Determines the is_quarter_end attribute of a datetime column.,['Datetime']
+day,transform,Determines the day of the month from a datetime.,['Datetime']
+equal,transform,Determines if values in one list are equal to another list.,[]
+expanding_mean,transform,Computes the expanding mean of events over a given window.,"['numeric', 'Datetime', 'time_index']"
+cityblock_distance,transform,Calculates the distance between points in a city road grid.,['LatLong']
+is_free_email_domain,transform,Determines if an email address is from a free email domain.,['EmailAddress']
+absolute,transform,Computes the absolute value of a number.,['numeric']
+modulo_by_feature,transform,Computes the modulo of a scalar by each element in a list.,['numeric']
+subtract_numeric_scalar,transform,Subtracts a scalar from each element in the list.,['numeric']
+rolling_trend,transform,Calculates the trend of a given window of entries of a column over time.,"['numeric', 'Datetime', 'time_index']"
+mean_characters_per_word,transform,Determines the mean number of characters per word.,['NaturalLanguage']
+full_name_to_first_name,transform,Determines the first name from a person's name.,['PersonFullName']
+whitespace_count,transform,Calculates number of whitespaces in a string.,['NaturalLanguage']
+tangent,transform,Computes the tangent of a number.,['numeric']
+cumulative_time_since_last_true,transform,Determines the time (in seconds) since the last boolean was `True` given a datetime index column and boolean column,"['Boolean', 'Datetime', 'time_index']"
+savgol_filter,transform,Applies a Savitzky-Golay filter to a list of values.,['numeric']
+full_name_to_last_name,transform,Determines the first name from a person's name.,['PersonFullName']
+is_quarter_start,transform,Determines the is_quarter_start attribute of a datetime column.,['Datetime']
+days_in_month,transform,Determines the day of the month from a datetime.,['Datetime']
+multiply_numeric_scalar,transform,Multiplies each element in the list by a scalar.,['numeric']
+expanding_std,transform,Computes the expanding standard deviation for events over a given window.,"['numeric', 'Datetime', 'time_index']"
+number_of_common_words,transform,Determines the number of common words in a string.,['NaturalLanguage']
+season,transform,"Determines the season of a given datetime. Returns winter, spring, summer, or fall. This only works for northern hemisphere.",['Datetime']
+diff,transform,Computes the difference between the value in a list and the previous value in that list.,['numeric']
+scalar_subtract_numeric_feature,transform,Subtracts each value in the list from a given scalar.,['numeric']
+less_than_equal_to,transform,Determines if values in one list are less than or equal to another list.,"['Datetime', 'numeric', 'Ordinal: None']"
